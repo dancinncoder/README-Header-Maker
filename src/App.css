@@ -1,38 +1,173 @@
-.App {
+
+header > h1 {
   text-align: center;
+  margin: 50px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+main {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+/* main content box */
+.edit-area {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  min-width: 1000px;
+  gap: 20px;
+}
+
+/* preview box on the left */
+.preview-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: solid black 2px;
+  background-color: white;
+  width: 650px;
+  height: 250px;
+}
+
+
+#firstText {
+  height: 60px;
+  width: 400px;
+  margin: 5px;
+  border: 1px dashed gray;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  padding: 0 5px 0 5px;
+}
+
+#secondText {
+  height: 80px;
+  width: 400px;
+  margin: 5px;
+  border: 1px dashed gray;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  padding: 0 5px 0 5px;
+}
+
+/* edit box on the right */
+.edit-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  border: solid 2px rgb(0, 0, 0);
+  background-color: white;
+  width: 350px;
+  height: 250px;
+  gap: 10px;
+}
+
+.edit-input-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.edit-input-box > input {
+  height: 25px;
+  padding: 2px;
+  border-radius: 0;
+}
+
+/* edit tool box top */
+.edit-tool-box-top {
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.edit-tool-box-top > button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: rgb(255, 255, 255) solid 1px;
+  background-color: rgb(255, 214, 214);
+  width: 50px;
+  height: 50px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+
+.edit-tool-box-top > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: white;
+  padding: 5px;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+/* edit tool box bottom */
+.edit-tool-box-bottom {
+  display: flex;
+  flex-direction: row;
+}
+
+.edit-tool-box-bottom > button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: rgb(255, 255, 255) solid 1px;
+  background-color: rgb(233, 255, 191);
+  width: 50px;
+  height: 50px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.edit-tool-box-bottom > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 5px;
+}
+
+/* edit submit button box */
+.edit-submit-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.edit-submit-box > button {
+  background-color: rgb(0, 0, 0);
+  width: 140px;
+  height: 30px;
+  border: none;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
